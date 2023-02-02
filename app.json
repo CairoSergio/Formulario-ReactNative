@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "Cadastro-Login",
+    "slug": "Cadastro-Login",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
