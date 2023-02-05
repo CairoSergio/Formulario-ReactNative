@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "143417827909",
+    "project_id": "sistemadelogin-3d998",
+    "storage_bucket": "sistemadelogin-3d998.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143417827909:android:dc1bb7953b205d907eb92c",
+        "android_client_info": {
+          "package_name": "com.cadastrologin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "143417827909-0r5d4taerpa78kl0gkbj4f9mmbs76p2e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM1ixCNc0mN4sAlW09hPWnkCjqDHsxOZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "143417827909-0r5d4taerpa78kl0gkbj4f9mmbs76p2e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
