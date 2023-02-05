@@ -2,13 +2,13 @@
 
 ### Use os seguintes commandos para rodar o app
 
-`expo start`
+### `expo start`
 ### Para inicializar o app usando o expo
 
-`cd Api`
+### `cd Api`
 ### Para entrar na pasta onde esta rodando o api
 
-`yarn start`
+### `yarn start`
 ### Para inicializar o servidor do seu banco de dados
 
 #
@@ -18,10 +18,10 @@
 <br/>
 
 ### Se voce estiver rodando o app em um emulador local voce vai precisar ir ao arquivo localizado em: 
-`src/Cadastro/index.js` 
+### `src/Cadastro/index.js` 
 
 ### Na linha `24` no lugar do endereço de ip voce vai colocar `localhost` faça o mesmo no arquivo localizado em:
-`src/Login/index.js`
+### `src/Login/index.js`
 
 <br/>
 
