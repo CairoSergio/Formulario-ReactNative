@@ -1,10 +1,16 @@
 import  express from "express";
-import { getUsers, addUsers } from "../controllers/users.js"
+import { getUsers, addUsers, deleteLink,getUsersId,getUsersLInks, updateLink,addLink ,getLinks} from "../controllers/users.js"
 import {db} from "../db.js"
 const router = express.Router()
 
 router.get('/', getUsers)
+router.get('/viewlinks', getLinks)
+router.get('/links/:id', getUsersLInks)
 router.post('/', addUsers)
+router.post('/newlink', addLink)
+router.post('/delete/:id', deleteLink)
+router.post('/atualizar', updateLink)
+router.post('/getid', getUsersId)
 router.post('/verify', (req, res) => {
     const q = "SELECT * FROM usuarios WHERE email = ? and senha = ?"
     const values = [req.body.email, req.body.senha]

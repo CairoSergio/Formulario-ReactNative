@@ -6,13 +6,12 @@ import { useNavigation } from '@react-navigation/native'
 import axios from "axios"
 
 
-export default function Cadastro() {
-    const navigation = useNavigation();
-    const [usernome, setName] = useState('')
-    const [useremail, setEmail] = useState('')
-    const [userphone, setPhone] = useState('')
-    const [userpassword, setPassword] = useState('')
-    const handleRegist = async (e)=>{
+export default function Cadastro({navigation}:any):JSX.Element {
+    const [usernome, setName] = useState<string>('')
+    const [useremail, setEmail] = useState<string>('')
+    const [userphone, setPhone] = useState<string>('')
+    const [userpassword, setPassword] = useState<string>('')
+    const handleRegist = async (e: any)=>{
         e.preventDefault()
         if(!usernome || !useremail|| !userphone|| !userpassword){
         return(
@@ -21,18 +20,21 @@ export default function Cadastro() {
         }else{
             await axios
     // use o seu ip aqui  |--------------| mantenha a porta 8800
-            .post('http://192.168.135.216:8800', {
+            .post('http://192.168.253.216:8800', {
                 nome: usernome,
                 email: useremail,
                 telefone: userphone,
                 senha: userpassword,
             })
-            .then(({data}) => 
-                alert(data),
-                setEmail(''),
-                setName(''),
-                setPassword(''),
-                setPhone('')
+            .then(({data}) =>
+                { 
+                    alert(data),
+                    setEmail(''),
+                    setName(''),
+                    setPassword(''),
+                    setPhone(''),
+                    navigation.navigate('Login')
+                }
             )
             .catch(({data}) => console.log('erro'))
         }
